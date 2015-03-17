@@ -1,0 +1,21 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!-- API 11 theme customizations can go here. -->
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+        	<style name="DialogAnimation1">
+        <item name="android:windowEnterAnimation">@anim/slide_out_down</item>
+        <item name="android:windowExitAnimation">@anim/slide_in_down</item>
+</style>
+
+	<!-- Animation for dialog box -->
+    <style name="DialogSlideAnim1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation1</item>
+    </style>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:tabWidgetStyle">@android:style/Widget.TabWidget</item>
+    </style>
+
+        	<style name="DialogAnimation1">
+        <item name="android:windowEnterAnimation">@anim/slide_out_down</item>
+        <item name="android:windowExitAnimation">@anim/slide_in_down</item>
+</style>
+
+	<!-- Animation for dialog box -->
+    <style name="DialogSlideAnim1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation1</item>
+    </style>
+</resources>

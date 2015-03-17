@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/template" >
+
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="55dp"
+         >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/gray">
+        
+     <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:singleLine="true"
+        android:textColor="@color/lightyellow"
+        android:hint="Type Here..."
+        android:layout_weight="0.2"
+        android:background="@drawable/textfield1"/>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="0.8"
+         android:background="@drawable/button_gray"
+         android:paddingBottom="10dp"
+         android:paddingLeft="15dp"
+         android:paddingRight="15dp"
+         android:paddingTop="10dp"
+         android:text="Send" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

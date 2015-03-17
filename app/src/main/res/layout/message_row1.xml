@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+ >
+
+<RelativeLayout
+    android:id="@+id/message_row1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/driver_message"
+    android:padding="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_weight="0.1"
+    >
+
+    <TextView
+        android:id="@+id/dateTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/type1"
+        android:layout_alignBottom="@+id/type1"
+        android:layout_alignParentLeft="true"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="40dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateTime"
+        android:layout_below="@+id/type1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/msgImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dateTime1"
+        android:layout_toRightOf="@+id/dateTime1"
+        android:src="@drawable/sent" />
+
+</RelativeLayout>
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/driver"
+    android:layout_gravity="bottom"
+    android:layout_weight="0.9"
+     />
+
+</LinearLayout>

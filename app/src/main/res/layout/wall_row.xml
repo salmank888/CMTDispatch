@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip"
+    android:background="@android:color/transparent" 
+>
+    <LinearLayout
+        android:id="@+id/llback"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+
+        >
+
+	        <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.25"
+		        >
+		
+		        <TextView
+		            android:id="@+id/name"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.33"
+					android:textColor="@color/maroon"
+		            android:singleLine="true"
+		            android:gravity="left|center_vertical"
+		            android:hint="Customer Name"
+		        />
+		        <TextView
+		            android:id="@+id/phone"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.67"
+					android:textColor="@color/orange"
+		            android:singleLine="true"
+		            android:gravity="center"
+		            android:hint="Phone Number"
+		        />
+		    </LinearLayout>
+		    <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.25"
+		        >
+		
+		        <TextView
+		            android:id="@+id/tripID"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.70"
+					android:textColor="@color/cyan"
+		            android:gravity="left|center_vertical"
+	           		android:hint="Trip Number"
+		        />
+		        <TextView
+		            android:id="@+id/pickupTime"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.82"
+					android:textColor="@color/red"
+		            android:gravity="left|center_vertical"
+	           		android:hint="PUTime"
+		        />
+		        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.73" 
+		            android:id="@+id/pickzone"
+		            android:textColor="@color/lightblue"
+		            android:singleLine="true"
+		            android:gravity="left|center_vertical"
+	           		android:hint="PUZone"
+		        />
+		        
+			    <TextView
+			            android:id="@+id/fare"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:singleLine="true"
+			            android:layout_weight="0.75"
+			            android:textColor="@color/lightyellow"
+			            android:gravity="center"
+	            		android:hint="$00.00"
+			    />
+		        		
+		    </LinearLayout>
+			<LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.25"
+		        >
+		        <TextView
+		            android:id="@+id/los"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.70"
+		            android:textColor="@color/magenta"
+		            android:gravity="left|center_vertical"
+	           		android:hint="LOS"
+		        />
+		        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.82" 
+		            android:id="@+id/pickdate"
+		            android:textColor="@color/light_green"
+		            android:gravity="left|center_vertical"
+	           		android:hint="PUDate"
+		        />
+		        
+		        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.73" 
+		            android:id="@+id/dropzone"
+		            android:textColor="@color/aquablue"
+		            android:singleLine="true"
+		            android:gravity="left|center_vertical"
+	           		android:hint="DOZone"
+		        />
+		        
+			    <TextView
+			            android:id="@+id/mileage"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="0.75"
+			            android:singleLine="true"
+			            android:textColor="@color/green"
+			            android:gravity="center"
+	            		android:hint="00 Mi"
+			    />
+			</LinearLayout>
+				    		<TextView
+		            android:id="@+id/distanceFromPickUpLocation"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+					android:textColor="@color/purple"
+		            android:hint="Distance From Pickup Location: x.xx miles"
+		        />
+	</LinearLayout>
+</LinearLayout>
