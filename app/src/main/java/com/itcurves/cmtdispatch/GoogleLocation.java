@@ -27,7 +27,7 @@ public class GoogleLocation extends Service implements GooglePlayServicesClient.
 	private Location currentBestLocation = null;
 
 
-    private LocationClient mLocationClient;
+    private LocationClient mLocationClient = new LocationClient(this, this, this);
     private LocationRequest mLocationRequest;
     // Flag that indicates if a request is underway.
     private boolean mInProgress;

@@ -215,16 +215,11 @@ public class FragmentTabsPager extends FragmentActivity{
     
     private void turnONGPS() {
 		try {
-//			final Intent intent = new Intent(getApplicationContext(), DeviceReservationActivity.class); // Updated, if driver was dangling on device, it will redirects to started
-//																							// Application
-//			intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP); // and enforce it to enable GPS
-//			startActivity(intent);
 
 			Intent inttent = new Intent(getApplicationContext(), GPSDialog.class);
 			inttent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			startActivity(inttent);
 
-			// setNegativeButton("Cancel", null)
 		} catch (Exception ex) {
 			Toast.makeText(FragmentTabsPager.this, ex.toString(), Toast.LENGTH_LONG).show();
 		}
